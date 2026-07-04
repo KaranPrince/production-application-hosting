@@ -1,0 +1,81 @@
+# ============================
+# Operating Systems
+# ============================
+
+.DS_Store
+Thumbs.db
+
+# ============================
+# Editors
+# ============================
+
+.vscode/
+.idea/
+
+# ============================
+# Python
+# ============================
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+
+# ============================
+# Docker
+# ============================
+
+*.pid
+
+# ============================
+# PKI
+# NEVER COMMIT PRIVATE KEYS
+# ============================
+
+infrastructure/pki/root-ca/private/*
+infrastructure/pki/server/private/*
+infrastructure/pki/generated/*.pem
+
+!infrastructure/pki/root-ca/private/.gitkeep
+!infrastructure/pki/server/private/.gitkeep
+
+# ============================
+# OpenSSL
+# ============================
+
+*.srl
+
+# ============================
+# Packet Captures (optional)
+# ============================
+assets/packet-captures/*.pcap
+assets/packet-captures/**/*.tmp
+
+# ============================
+# Logs
+# ============================
+*.log
+
+# ============================
+# Environment
+# ============================
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+
+# Terraform
+.terraform/
+*.tfstate*
+
+# ============================
+# Temporary
+# ============================
+*.tmp
+*.bak
+*~

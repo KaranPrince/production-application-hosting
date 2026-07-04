@@ -1,0 +1,36 @@
+services:
+
+  haproxy:
+    image: haproxy:lts-alpine
+    container_name: haproxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8404:8404"
+    volumes:
+      - ../haproxy/config/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+      - ../../pki/generated:/usr/local/etc/haproxy/certs:ro
+    depends_on:
+      - frontend
+      - api
+      - admin
+
+  frontend:
+    image: pah-frontend:v1
+    container_name: frontend
+    restart: unless-stopped
+
+  api:
+    image: pah-api:v2
+    container_name: api
+    restart: unless-stopped
+
+  admin:
+    image: pah-admin:v1
+    container_name: admin
+    restart: unless-stopped
+
+networks:
+  default:
+    name: pah-network
