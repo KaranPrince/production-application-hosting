@@ -1,15 +1,15 @@
 # References
 
-This directory collects reference material used throughout the project.
+This directory contains reference material used throughout the project.
 
-Examples include:
+References may include:
 
-* RFCs
 * Official documentation
-* Kubernetes Enhancement Proposals (KEPs)
-* Docker documentation
-* HAProxy documentation
-* OpenSSL documentation
-* Cloud provider documentation
+* RFCs
+* Standards
+* Best practices
+* Industry articles
+* Books
+* Whitepapers
 
-Where possible, the repository favors official documentation over third-party resources.
+Where possible, primary sources should be preferred over secondary summaries.

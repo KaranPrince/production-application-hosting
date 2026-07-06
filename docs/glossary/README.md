@@ -1,20 +1,20 @@
 # Glossary
 
-This glossary provides concise definitions for the technologies, protocols, and engineering terms used throughout the repository.
+This glossary provides concise definitions for technologies and concepts introduced throughout the repository.
 
 Examples include:
 
-* DNS
-* TLS
 * Reverse Proxy
 * Load Balancer
-* Ingress
-* Gateway API
-* Service Mesh
+* TLS
 * PKI
-* CIDR
-* CNI
-* RBAC
-* GitOps
+* DNS
+* Container
+* Image
+* Certificate Authority
+* Gateway
+* Ingress
+* Health Check
+* Readiness Check
 
-The glossary grows as new concepts are introduced in future sprints.
+The glossary will expand as additional production technologies are introduced in future sprints.

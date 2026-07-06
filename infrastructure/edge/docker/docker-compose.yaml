@@ -27,7 +27,7 @@ services:
     restart: unless-stopped
 
   admin:
-    image: pah-admin:v1
+    image: pah-admin:v2
     container_name: admin
     restart: unless-stopped
 

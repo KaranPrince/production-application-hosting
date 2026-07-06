@@ -1,54 +1,42 @@
 # Security Policy
 
-## Security Philosophy
-
-This repository demonstrates production security practices while remaining suitable for local development and learning.
-
-## Supported Versions
+## Supported Version
 
 | Version | Supported |
 | ------- | --------- |
 | v0.1.x  | ✅         |
 
-## Reporting Vulnerabilities
+## Reporting Security Issues
 
-If you discover a security issue within this repository, please open a responsible disclosure issue describing:
+If you discover a security issue, please open a private security report instead of publishing the details publicly.
 
-* The affected component
-* Reproduction steps
-* Impact
-* Suggested mitigation
+Include:
 
-Do not publish sensitive information such as private keys or credentials.
+* Description
+* Steps to reproduce
+* Potential impact
+* Suggested remediation (if known)
 
-## Secrets
+## Repository Security
 
-The repository must never contain:
+The repository intentionally excludes:
 
 * Private keys
-* Passwords
-* API tokens
-* Cloud credentials
-* SSH keys
-* Kubernetes Secrets
-* Environment files containing secrets
+* Generated certificates
+* Sensitive credentials
+* Secrets
+* Environment-specific artifacts
 
 ## Certificates
 
-Only public certificates required for verification may be committed.
+The included PKI is intended **only for local development and learning**.
 
-Private keys must always remain excluded through `.gitignore`.
+Do not use the generated certificates or Root CA in production environments.
 
-Certificates should be regenerated using the provided scripts.
+## Dependencies
 
-## Future Security Improvements
+Keep container images and application dependencies updated as future releases are published.
 
-Future releases will introduce:
+## Responsible Disclosure
 
-* cert-manager
-* Keycloak
-* RBAC
-* Network Policies
-* Secret Management
-* OAuth2 / OpenID Connect
-* Automated certificate rotation
+Please allow maintainers reasonable time to investigate and resolve reported vulnerabilities before public disclosure.

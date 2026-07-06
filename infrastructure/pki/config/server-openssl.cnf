@@ -18,5 +18,5 @@ subjectAltName = @alt_names
 
 [ alt_names ]
 DNS.1 = frontend.pah.local
-#DNS.2 = api.pah.local
+DNS.2 = api.pah.local
 DNS.3 = admin.pah.local

@@ -1,20 +1,21 @@
 # Project Roadmap
 
-The roadmap tracks the long-term evolution of the platform.
+The repository evolves through incremental releases.
 
-Each milestone represents a production capability rather than a standalone technology.
+## Current Release
 
-Major milestones include:
+* v0.1.0 — Foundation
 
-* Production Edge
-* DNS
-* High Availability
-* Load Balancing
-* Kubernetes
-* Observability
-* GitOps
-* Security
-* Cloud
-* Multi-Region Architecture
+## Planned Releases
 
-The roadmap is updated at the conclusion of each release.
+* v0.2.0 — DNS Fundamentals
+* v0.3.0 — Load Balancing
+* v0.4.0 — Reverse Proxy
+* v0.5.0 — Application Runtime
+* v0.6.0 — Databases
+* v0.7.0 — Caching
+* v0.8.0 — Messaging
+* v0.9.0 — Observability
+* v1.0.0 — Production Application Platform
+
+Each release introduces one major production concept while preserving compatibility with previous releases.

@@ -1,80 +1,59 @@
-# Contributing Guide
+# Contributing
 
-Thank you for your interest in contributing to this repository.
+Thank you for your interest in contributing to the **Production Application Hosting** project.
 
-The objective of this project is to provide a production-focused learning platform for Platform Engineering and DevOps.
+## Purpose
 
-## Repository Principles
+This repository is designed as a long-term learning resource for understanding how production applications are designed, deployed, secured, and operated.
 
-Every contribution should:
+## Development Workflow
 
-* Improve the implementation.
-* Improve the documentation.
-* Remain reproducible.
-* Follow production engineering practices.
+1. Create a feature branch.
+2. Implement the change.
+3. Update documentation if required.
+4. Validate using the automation scripts.
+5. Submit a Pull Request.
 
 ## Branch Naming
 
-Use descriptive branch names.
-
-Examples:
-
-```
-feature/sprint-02-dns
-
-feature/haproxy-health-checks
-
-bugfix/tls-san-validation
-
-docs/readme-update
-```
+* feature/<feature-name>
+* fix/<issue-name>
+* docs/<topic>
+* refactor/<component>
 
 ## Commit Messages
 
-Follow Conventional Commits.
+Follow Conventional Commits where practical.
 
 Examples:
 
-```
-feat(edge): add HAProxy reverse proxy
-
-feat(dns): introduce CoreDNS
-
-fix(tls): correct SAN configuration
-
-docs(readme): update architecture overview
-```
-
-## Pull Requests
-
-Every Pull Request should include:
-
-* Purpose
-* Implementation summary
-* Verification steps
-* Screenshots (if applicable)
-* Documentation updates
+* feat: add DNS examples
+* fix: correct HAProxy configuration
+* docs: update Sprint-02 documentation
+* refactor: simplify bootstrap workflow
 
 ## Documentation
 
-Implementation and documentation should evolve together.
+Documentation is considered part of the implementation.
 
-A sprint is not complete until both have been updated.
+Changes that affect architecture, deployment, or operations should include corresponding documentation updates.
 
-## Testing
+## Code Style
 
-Before submitting changes:
+* Keep implementations simple.
+* Prefer readability over cleverness.
+* Avoid unnecessary dependencies.
+* Keep scripts modular and reusable.
 
-* Verify containers start successfully.
-* Verify HTTPS works.
-* Verify health endpoints.
-* Verify documentation reflects implementation.
+## Pull Requests
+
+Before submitting a Pull Request, verify:
+
+* Bootstrap succeeds.
+* Verification passes.
+* Documentation is updated.
+* No generated files are committed.
 
 ## Questions
 
-If you discover an issue, create an Incident Report or open an issue describing:
-
-* Expected behavior
-* Actual behavior
-* Steps to reproduce
-* Proposed solution
+Open a GitHub Issue for bugs, improvements, or documentation requests.

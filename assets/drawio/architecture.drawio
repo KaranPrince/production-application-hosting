@@ -1,0 +1,12 @@
+        Browser
+            │
+        Hosts File
+            │
+TLS (Root CA → Server Certificate)
+            │
+        HAProxy
+            │
+        Docker Network
+ ┌─────────┬────────┬────────┐
+ │         │        │        │
+Frontend Admin    Flask     API

@@ -1,14 +1,13 @@
 # Shared Components
 
-This directory contains code, configuration, templates, or libraries shared across multiple applications.
+This directory contains reusable assets shared across multiple applications.
 
-Examples may include:
+Examples include:
 
-* Shared configuration
-* Common middleware
+* Common configuration
+* Shared scripts
+* Shared libraries
+* Future middleware
 * Utility modules
-* Logging helpers
-* Health check libraries
-* Authentication helpers
 
-Shared functionality should be centralized here to avoid duplication.
+As the platform grows, application-independent components should be placed here instead of being duplicated across services.
